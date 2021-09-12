@@ -1,8 +1,0 @@
-Filezila
-
-Host: ocelot.aul.fiu.edu
-Username: rroux004
-Password: A....5
-Port 22
-
-access : https://ocelot.aul.fiu.edu/~rroux004/
