@@ -1,0 +1,25 @@
+/* 
+  Author: Romain Roux
+  Date: 09/12/2021
+  CSS for my index page 
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+h3 {
+  margin: 0;
+}
+
+header img {
+  height: 80px;
+  width: 80px;
+}
+
+main img {
+  height: 80px;
+  width: 80px;
+  margin: 10px 0;
+}

@@ -1,0 +1,8 @@
+1. Romain Roux
+2. N/A
+3. Computer Sciences
+4. I have already built some website using NodeJS, React.
+5. I already used HTML CSS in a couple of projects.
+6. Yes
+7. I am a French IT student and I am going to study 1 year at FIU. I like coding, travel, sport...
+8. As said on 5. I already built som website using html/css. They were mainly using models that someone else on the team made. When i try to make a website by myself I feel like they look really old... So I would like to improve on how to make me design more modern.

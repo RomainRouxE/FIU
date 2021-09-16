@@ -1,0 +1,18 @@
+What makes a good design? What elements enhanced your experience with the site or page?
+
+First of all, a good design should "work", by that I mean that a website doesn t have broken links, pictures or div for exemple. A good website should also work properly on mobile, with responsive.
+Second point I think is really important are the color selected for each elements (h1 / h2/ background / p etc...). They should fit well each other and be complementary, everything should be readable etc... Since I m terrible at picking colors, I usually use one of the website out there generating complementary color as coolors.co , htmlcolorcodes.com etc...
+An other point of a good design for me, is the simplicity, I think simple design, simple typo, where everything is easy to see and read make the website better. By simple I meant for exemple no text picture or too many inferomation on the website.
+A good website should also be easy to navigate on. I don t like to search 10min to find a specific page. i usually like a simple header / menu to get every pages of a website.
+Finally a good website shouldn t take too much time to load. And by too much i mean over 10sec if too much.
+I believe these few elements are the basic to make a good design for a website.
+
+
+What elements detracted from your experience or caused a negative experience?
+
+Overflow of elements on the page, broken element or not mobile responsive but I believe the website loading times is the most important factor.
+
+
+How can we determine if a web site has a "good" design or a "poor" design?
+
+I believe if a website follow the few points i said on the first question, its on the right path to be a good website.
