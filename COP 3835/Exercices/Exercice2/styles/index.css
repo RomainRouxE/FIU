@@ -1,0 +1,53 @@
+/* 
+  Author: Romain Roux
+  Date: 09/16/2021
+  CSS for my index page 
+*/
+
+body {
+  margin: 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+header h2 {
+  font-size: 175%;
+  color: #800000;
+  text-indent: 30px;
+}
+
+header h3 {
+  font-size: 130%;
+  font-style: italic;
+  text-indent: 30px;
+}
+
+.shadow {
+  text-shadow: 2px 2px 2px #800000;
+}
+
+header img {
+  height: 80px;
+  width: 80px;
+  float: left;
+}
+
+main h1 {
+  font-size: 150%;
+}
+main h2 {
+  color: #800000;
+  font-size: 130%;
+}
+main h3 {
+  font-size: 105%;
+}
+
+main img {
+  height: 80px;
+  width: 80px;
+}
+
+footer p {
+  text-align: center;
+}
