@@ -18,18 +18,18 @@ public class GroceryStoreCheckout {
     	Scanner scnr = new Scanner(System.in);
 
     	//Print welcome messages
-        System.out.println("\"Welcome to the checkout system of Awesome Grocery Store!\n");
+        System.out.println("Welcome to the checkout system of Awesome Grocery Store!\n");
         
         //Ask for user input for rice weight and read input
-        System.out.println("Please enter the weight of rice in pounds: \"");
+        System.out.println("Please enter the weight of rice in pounds:");
         double rice = scnr.nextDouble();
 
         //Ask for user input for eggs number and read input
-        System.out.println("\"Now, enter the number of eggs: \"");
+        System.out.println("Now, enter the number of eggs:");
         double eggs = scnr.nextDouble();
 
         //Ask for user input for loafs of french bread and read input
-        System.out.println("\"Now, enter the number of loafs of French bread: \"");
+        System.out.println("Now, enter the number of loafs of French bread:");
         double bread = scnr.nextDouble();
 
         //Declare subTotal | tax | total and calculate each of them with their formula
@@ -38,13 +38,13 @@ public class GroceryStoreCheckout {
         double total = subtotal + tax;
 
         //Print the receipt
-        System.out.println("\"Here is your receipt:");
+        System.out.println("Here is your receipt:");
         System.out.println("————————————–");
         
         //Use of printf to print 2 decimals
         System.out.printf("SUBTOTAL: $%.2f%n", subtotal);
         System.out.printf("TAX: $%.2f%n", tax );
-        System.out.printf("TOTAL: $%.2f\"%n", total );
+        System.out.printf("TOTAL: $%.2f%n", total );
 
         //Close scanner object to avoid ressource leak
         scnr.close();
