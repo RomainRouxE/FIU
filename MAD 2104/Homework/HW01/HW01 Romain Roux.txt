@@ -1,0 +1,229 @@
+MAD 2104 - HW01 - Romain Roux - PID: 6322237
+
+
+
+Ex1. Show that each of these conditional statements is a tautology by using truth tables.
+
+a) [ ~p /\ (p V q)] → q
+
+p | ~p | q | p V q | ~p /\ (p V q) | [ ~p /\ (p V q)] → q |
+T | F  | T |   T   |      F        |          T           |
+T | F  | F |   T   |      F        |          T           |
+F | T  | T |   T   |      T        |          T           |
+F | T  | F |   F   |      F        |          T           |
+
+
+b) [(p → q) /\ (q → r)] → (p → r)
+
+p | q | r | p → q | q → r | (p → q)/\(q → r) | p → r | [(p → q)/\(q → r)] → (p→r) |
+T | T | T |   T   |   T   |         T        |   T   |             T              |
+T | T | F |   T   |   F   |         F        |   F   |             T              |
+T | F | F |   F   |   T   |         F        |   F   |             T              |
+F | T | F |   T   |   F   |         F        |   T   |             T              |
+T | F | T |   F   |   T   |         F        |   T   |             T              |
+F | T | T |   T   |   T   |         F        |   T   |             T              |
+F | F | T |   T   |   T   |         T        |   T   |             T              |
+F | F | F |   T   |   T   |         T        |   T   |             T              |
+
+
+c) [p /\ (p → q)] → q
+
+p | q | p → q | p /\ (p → q) | [p /\ (p → q)] → q |
+T | T |   T   |       T      |         T          |
+T | F |   F   |       F      |         T          |
+F | T |   T   |       F      |         T          |
+F | F |   T   |       F      |         T          |
+
+
+d) [(p V q) /\ (p → r) /\ (q → r)] → r
+
+p | q | r | p V q | p → r | (pVq) /\ (p→r) | q → r | (pVq) /\ (p→r) /\ (q→r) |
+T | T | T |   T   |   T   |        T       |   T   |            T            |
+T | T | F |   T   |   F   |        F       |   F   |            F            |
+T | F | F |   T   |   F   |        F       |   F   |            F            |
+F | T | F |   T   |   F   |        F       |   F   |            F            |
+T | F | T |   T   |   T   |        T       |   T   |            T            |
+F | T | T |   T   |   T   |        T       |   T   |            T            |
+F | F | T |   F   |   T   |        F       |   T   |            T            |
+F | F | F |   F   |   T   |        F       |   T   |            F            |
+
+[(p V q) /\ (p → r) /\ (q → r)] → r |
+                 T                  |
+                 T                  |
+                 T                  |
+                 T                  |
+                 T                  |
+                 T                  |
+                 T                  |
+                 T                  |
+
+
+
+Ex2. Show that the following proposition are logical equivalent.
+
+a) Show that p ↔ q and (p /\ q) V (~p /\ ~q) are logically equivalent.
+
+p | q | p ↔ q | ~p | ~q | p /\ q | ~p /\ ~q | (p /\ q) V (~p /\ ~q) | 
+T | T |   T   |  F | F  |   T    |     F    |          T            |
+T | F |   F   |  F | T  |   F    |     F    |          F            |
+F | T |   F   |  T | F  |   F    |     F    |          F            |
+F | F |   T   |  T | T  |   F    |     T    |          T            |
+
+
+b) Show that ~(p ↔ q) and p ↔ ~q are logically equivalent.
+
+p | q | p ↔ q | ~(p ↔ q) | ~q | p ↔ ~q | 
+T | T |   T   |     F    | F  |   F    |
+T | F |   F   |     T    | T  |   T    |
+F | T |   F   |     T    | F  |   T    |
+F | F |   T   |     F    | T  |   F    |
+
+
+c) Show that p → q and ~q → ~p are logically equivalent.
+
+p | q | p → q | ~q | ~p | ~q → ~p |
+T | T |   T   |  F |  F |    T    |
+T | F |   F   |  F |  T |    F    |
+F | T |   T   |  T |  F |    T    |
+F | F |   T   |  T |  T |    T    |
+
+
+d) Show that ~p ↔ a and p ↔ ~a are logicallv equivalent.
+
+p | ~p | a | ~a | ~p ↔  a | p ↔ ~a |
+T |  F | T |  F |    F    |   F    |
+T |  F | F |  T |    T    |   T    |
+F |  T | T |  F |    T    |   T    |
+F |  T | F |  T |    F    |   F    |
+
+
+
+Ex4.
+
+a) Explain why the question ”Are you a liar?” does not work.
+
+The question 'Are you a liar' does not work because if the canibal always lies, he will answer NO because he will be lying.
+If the canibal always tells the truth, then his answer will also be NO because he will be telling the truth that he is not a liar.
+
+
+(b) Find a question that the explorer can use to determine whether the cannibal always lies or always tells the truth.
+
+"Are you a cannibal ?"
+
+
+
+Ex5. Express these system specifications using the propositions p "The user enters a valid password" q "Access is granted" and r "The user has paid the subscription fee" and logical connectives
+
+a) "The user has paid the subscription fee, but does not enter a valid password."
+
+r /\ ~p
+
+
+b) ”Access is granted whenever the user has paid the subscription fee and enters a valid password.”
+
+(r /\ q) → q
+
+
+c) "Access is denied if the user has not paid the subscription fee."
+
+~r → ~q
+
+
+d) "If the user has not entered a valid password but has paid the subscription fee, then access is granted."
+
+( ~p /\ r) → q
+
+
+
+
+Ex8. Determine whether each of these compound propositions is satisfiable.
+
+a) (p V ~q) /\ (~p V q) /\ (~p V ~q)
+
+p|~p|q|~q | pV~q | ~p V q | (p V ~q)/\(~p V q) | ~p V ~q | (pV~q)/\(~pVq)/\(~pV~q) |
+T| F|T| F |  T   |    T   |         T          |    F    |            F            |
+T| F|F| T |  T   |    F   |         F          |    T    |            F            |
+F| T|T| F |  F   |    T   |         F          |    T    |            F            |
+F| T|F| T |  T   |    T   |         T          |    T    |            T            |
+
+(p V ~q) /\ (~p V q) /\ (~p V ~q) |
+                F                 |
+                F                 |
+                F                 |
+                T                 |
+
+(p V ~q) /\ (~p V q) /\ (~p V ~q) is true when p and q are False.
+Hence, it is satisfiable.
+
+
+b) (p → q) /\ (p → ~q) /\ (~p → q) /\ (~p → ~q)
+
+p | ~p | q | ~q | p → q | p → ~q | (p → q) /\ (p → ~q)| ~p → q |
+T |  F | T |  F |   T   |    F   |         F          |    T   |
+T |  F | F |  T |   F   |    T   |         F          |    T   |
+F |  T | T |  F |   T   |    T   |         T          |    T   |
+F |  T | F |  T |   T   |    T   |         T          |    F   |
+
+(p → q) /\ (p → ~q) /\ (~p → q)| ~p→~q | (p → q) /\ (p → ~q)/\(~p → q) /\ (~p → ~q)|
+             F                 |   T   |                     F                     |
+             F                 |   T   |                     F                     |
+             T                 |   F   |                     F                     |
+             F                 |   T   |                     F                     |
+
+(p → q) /\ (p → ~q) /\ (~p → q) /\ (~p → ~q) is never true.
+Hence, it is unsatisfiable.
+
+
+c) (p ↔ q) /\ (~p ↔ q)
+
+p | q | ~p | p ↔  q | ~p ↔  q | (p ↔ q) /\ (~p ↔ q) | 
+T | T |  F |   T    |    F    |         F           |
+T | F |  F |   F    |    T    |         F           |
+F | T |  T |   F    |    T    |         F           |
+F | F |  T |   T    |    F    |         F           |
+
+(p ↔ q) /\ (~p ↔ q) is never true.
+Hence, it is unsatisfiable.
+
+
+
+Ex9. Translate these specifications into English where F(p) is "Printer p is out of service," B(p) is "Printer p is busy" L(j) is "Print job j is lost" and Q(j ) is "Print job j is queued."
+
+a) ∃p(F(p) /\ B(p)) → ∃jL(j)
+
+If there is a printer that s out of service and busy, then there is a print job that s lost
+
+
+b) b) ∀pB(p) → ∃jQ(j)
+
+If all printers are busy, then there is a print job that s queued.
+
+
+c) c) ∃j(Q(j) /\ L(j)) → ∃pF(p)
+
+If there exists a print job that is lost and queued, then there exists a printer that s out of service
+
+
+d) d) (∀pB(p) /\ ∀jQ(j)) → ∃jL(j)
+
+If all printers are busy and all print jobs are queued, then there exists a print job that is lost
+
+
+
+Ex11. Let P(x), Q(x), and R(x) be the statements " x is a professor," "x is ignorant" and "x is vain," respectively. Express each of these statements using quantifiers; logical connectives; and P(x), Q(x), and R(x), where the domain consists of all people
+
+a) No professors are ignorant.
+
+∀x(P(x) → ~Q(x))
+
+
+b) All ignorant people are vain.
+
+∀x(Q(x) → R(x))
+
+
+c) No professors are vain.
+
+∀x(P(x) → ~R(x))
+
+d) Does (c) follow from (a) and (b)?
