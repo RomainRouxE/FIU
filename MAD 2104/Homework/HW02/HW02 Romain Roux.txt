@@ -1,0 +1,69 @@
+MAD 2104 - HW02 - Romain Roux - PID: 6322237
+
+
+
+Ex1. Explain why A × B × C and (A × B) × C are not the same.
+
+A x B x C will generate the set of type (a,b,c) element.
+(A x B) x C will generate the set of type ((a,b),c) element.
+
+
+Ex3. Let A, B, and C be sets. Show that :
+
+(a) (A ∪ B) ⊆ (A ∪ B ∪ C)
+
+We have: x∈A ∪ B  ⇔ (x∈A) ∨ (x∈B) ⇒ (x∈A) ∨ (x∈B) ∨ (x∈C) ⇔ x∈(A ∪ B ∪ C)
+Thus, we have : (A ∪ B) ⊆ (A ∪ B ∪ C)
+
+
+(b) (A ∩ B ∩ C) ⊆ (A ∩ B)
+
+By definition, we have x∈A ∩ B ∩ C ⇔ x∈A ∧ x∈B ∧ x∈C ⇒ x∈A ∧ x∈B ⇔ x∈(A ∩ B)
+Thus, we have A ∩ B ∩ C ⊆ A ∩ B.
+
+
+(c) (A − C) ∩ (C − B) = ∅
+
+For x∈(A − C) ∩ (C − B) we have:
+x∈(A − C) ∩ (C − B) ⇔ x∈(A − C) ∧ x∈(C − B) ⇔ x∈A ∧ x∈∉C ∧ x∈C ∧ x∈∉B 
+The latter means that the set (A − C) ∩ (C − B) is empty.
+Thus, (A − C) ∩ (C − B) = ∅
+
+
+
+Ex6. If f and f ◦ g are one-to-one, does it follow that g is one-to-one ?
+
+Suppose g is not one to one, then there exist x != y in X such that g(x)=g(y), so as f is one to one, f o g(x)=f o g(y), with x != y, which contradicts f o g being one to one.
+Hence g must be one to one.
+
+
+
+Ex8. Let f be a function from the set A to the set B. Let S and T be subsets of A. Show that :
+
+(a) f(S ∪ T) = f(S) ∪ f(T)
+
+Let y be an arbitrary element of f(S ∪ T).
+Then there is an element x in S ∪ T such that y = f(x).
+If x is in S, then y is in f(S). Hence y is in f(S) ∪ f(T) .
+Similarly y is in f(S) ∪ f(T) if x is in T.
+
+Hence if y ∈ f(S ∪ T), then y ∈ f(S) ∪ f(T).
+
+
+(b) f(S ∩ T) ⊆ f(S) ∩ f(T).
+
+Let y be an arbitrary element of f(S ∩ T).
+Then there is an element x in S ∩ T such that y = f(x), that is there is an element x which is in S and in T, and for which y = f(x) holds.
+Hence y ∈ f(S) and y ∈ f(T), that is y ∈ f(S) ∩ f(T).
+
+
+
+Ex14. Show that a subset of a countable set is also countable.
+
+Let S be a countable set and let T ⊆ S.
+By definition, there exists an injection f:S→N.
+Let i : T → S be the inclusion mapping.
+We have that i is an injection.
+Because the composite of injections is an injection, it follows that f o i : T → N is an injection.
+
+Hence, T is countable.
