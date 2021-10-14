@@ -1,0 +1,17 @@
+Importance of Responsive Web Design
+
+Nowadays over 60% of searches online now come from a mobile device, and 40% of users have gone to a competitor’s website after a poor mobile experience.
+These 2 numbers show the importance of the mobile searches and why being mobile friendly is really important.
+
+Having a responsive website is also really important for the SEO.
+Using a mobile website is also beneficial if you want to rank highly on search engines. In fact, Google is now prioritizing mobile-optimized sites when searching from mobile devices. This means mobile-friendly sites that have a responsive mobile design and load quickly are promoted in the search rankings. Those that do not meet these terms are demoted and therefore suffer from less visibility.
+
+The other point of responsive website is making your users happy and improve their experience when they visit your site.
+One of the best ways of improving user experience is to mobilize your website. This helps to make your website more easily navigable, and it allows potential clients to smoothly browse your content without any problems. The end result is that your mobile website will provide a better browsing experience for all your visitors.
+
+
+How to do responsive design :
+
+The most popular way to do responsive website is by using media queries.
+It consists of an optional media type and any number of optional expressions that limit when the query will trigger, such as width, height, font etc.... Media queries developers to customize their content for different presentation mediums.
+
