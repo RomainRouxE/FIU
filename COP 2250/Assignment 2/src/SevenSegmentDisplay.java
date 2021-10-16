@@ -67,8 +67,8 @@ public class SevenSegmentDisplay {
 				 * empty : empty line with right number of spaces from ver variable + 2 at start
 				 * + 2 at the end
 				 */
-				String top = "  " + ast.repeat(ver) + "  ";
-				String empty = space.repeat(ver + 4);
+				String top = "  " + ast.repeat(hor) + "  ";
+				String empty = space.repeat(hor + 4);
 				/*
 				 * both : concatenate the 2 * at start / end with the number of spaces the user
 				 * wanted from ver variable left : concatenate the 2 * at start with the number
@@ -76,9 +76,9 @@ public class SevenSegmentDisplay {
 				 * both : concatenate the 2 * at end with the number of spaces the user wanted
 				 * from ver variable and with the 2 spaces at the start
 				 */
-				String both = "**" + space.repeat(ver) + "**";
-				String left = "**" + space.repeat(ver + 2);
-				String right = space.repeat(ver + 2) + "**";
+				String both = "**" + space.repeat(hor) + "**";
+				String left = "**" + space.repeat(hor + 2);
+				String right = space.repeat(hor + 2) + "**";
 
 				/*
 				 * If / else if to determine which number to print depending on user input.
@@ -94,7 +94,7 @@ public class SevenSegmentDisplay {
 					System.out.println(top);
 					System.out.println(top);
 					for (j = 0; j < 2; j++) {
-						for (i = 0; i < hor; i++)
+						for (i = 0; i < ver; i++)
 							System.out.println(both);
 						if (j == 0) {
 							System.out.println(empty);
@@ -107,7 +107,7 @@ public class SevenSegmentDisplay {
 					System.out.println(empty);
 					System.out.println(empty);
 					for (j = 0; j < 2; j++) {
-						for (i = 0; i < hor; i++)
+						for (i = 0; i < ver; i++)
 							System.out.println(right);
 						if (j == 0) {
 							System.out.println(empty);
@@ -120,7 +120,7 @@ public class SevenSegmentDisplay {
 					System.out.println(top);
 					System.out.println(top);
 					for (j = 0; j < 2; j++) {
-						for (i = 0; i < hor; i++) {
+						for (i = 0; i < ver; i++) {
 							if (j == 0)
 								System.out.println(right);
 							else
@@ -137,7 +137,7 @@ public class SevenSegmentDisplay {
 					System.out.println(top);
 					System.out.println(top);
 					for (j = 0; j < 2; j++) {
-						for (i = 0; i < hor; i++)
+						for (i = 0; i < ver; i++)
 							System.out.println(right);
 						if (j == 0) {
 							System.out.println(top);
@@ -150,7 +150,7 @@ public class SevenSegmentDisplay {
 					System.out.println(empty);
 					System.out.println(empty);
 					for (j = 0; j < 2; j++) {
-						for (i = 0; i < hor; i++) {
+						for (i = 0; i < ver; i++) {
 							if (j == 0)
 								System.out.println(both);
 							else
@@ -167,7 +167,7 @@ public class SevenSegmentDisplay {
 					System.out.println(top);
 					System.out.println(top);
 					for (j = 0; j < 2; j++) {
-						for (i = 0; i < hor; i++) {
+						for (i = 0; i < ver; i++) {
 							if (j == 0)
 								System.out.println(left);
 							else
@@ -184,7 +184,7 @@ public class SevenSegmentDisplay {
 					System.out.println(top);
 					System.out.println(top);
 					for (j = 0; j < 2; j++) {
-						for (i = 0; i < hor; i++) {
+						for (i = 0; i < ver; i++) {
 							if (j == 0)
 								System.out.println(left);
 							else
@@ -201,7 +201,7 @@ public class SevenSegmentDisplay {
 					System.out.println(top);
 					System.out.println(top);
 					for (j = 0; j < 2; j++) {
-						for (i = 0; i < hor; i++)
+						for (i = 0; i < ver; i++)
 							System.out.println(right);
 						if (j == 0) {
 							System.out.println(empty);
@@ -214,7 +214,7 @@ public class SevenSegmentDisplay {
 					System.out.println(top);
 					System.out.println(top);
 					for (j = 0; j < 2; j++) {
-						for (i = 0; i < hor; i++)
+						for (i = 0; i < ver; i++)
 							System.out.println(both);
 						if (j == 0) {
 							System.out.println(top);
@@ -227,7 +227,7 @@ public class SevenSegmentDisplay {
 					System.out.println(top);
 					System.out.println(top);
 					for (j = 0; j < 2; j++) {
-						for (i = 0; i < hor; i++) {
+						for (i = 0; i < ver; i++) {
 							if (j == 0)
 								System.out.println(both);
 							else
