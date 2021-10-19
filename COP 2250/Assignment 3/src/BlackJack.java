@@ -82,11 +82,15 @@ public class BlackJack {
 			// Increase i to get the next card if needed.
 			else if (choice.equals("hit")) {
 				System.out.println("New card for " + playerName + ": " + deck[i]);
-				playerScore += value(deck[i]);
+				// If card is ace and playerScore > 10 ace value is 1
+				if (deck[i].startsWith("A") && playerScore > 10)
+					playerScore++;
+				else
+					playerScore += value(deck[i]);
 				i++;
 			}
 			// If the player do a mistake enter something different than "hit" or "stay",
-			// say than he needs to enter "stay" or "hit" only.
+			// says than he needs to enter "stay" or "hit" only.
 			else {
 				System.out.println("You need to enter stay or hit");
 				choice = "hit";
@@ -111,7 +115,11 @@ public class BlackJack {
 		System.out.println("The first card of the dealer was: " + deck[1]);
 		while (dealerScore < 17) {
 			System.out.println("New card for dealer: " + deck[i]);
-			dealerScore += value(deck[i]);
+			// If card is ace and dealerScore > 10 ace value is 1
+			if (deck[i].startsWith("A") && dealerScore > 10)
+				dealerScore++;
+			else
+				dealerScore += value(deck[i]);
 			i++;
 		}
 
