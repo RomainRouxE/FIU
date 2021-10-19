@@ -1,3 +1,10 @@
+/*
+ * This is a program written by Romain ROUX
+ * as a deliverable of Programming Assignment 3
+ * for COP2250 - Fall 2021
+ * Date: 10/19/2021
+ */
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -58,14 +65,36 @@ public class BlackJack {
 			dealerScore += value(deck[3]);// Ace's value is 11 here...
 		// Your code comes HERE...
 
+		// i used to get the card from the deck. Initialised to 4 because the 4th first
+		// cards already been given.
 		int i = 4;
-		for (String choice = "hit"; choice.equals("hit"); i++) {
+
+		// While the player want to get a new card, give a new card to the player and
+		// add its value to the playerScore
+		for (String choice = "hit"; choice.equals("hit");) {
 			System.out.println("Hit or Stay?");
 			choice = keyboard.nextLine();
+			// If the player enter "stay" leave the loop.
 			if (choice.equals("stay"))
 				break;
-			System.out.println("New card for " + playerName + ": " + deck[i]);
-			playerScore += value(deck[i]);
+			// If the player enter "hit" draw a new card fo the player and add its value to
+			// the playerScore using the value function.
+			// Increase i to get the next card if needed.
+			else if (choice.equals("hit")) {
+				System.out.println("New card for " + playerName + ": " + deck[i]);
+				playerScore += value(deck[i]);
+				i++;
+			}
+			// If the player do a mistake enter something different than "hit" or "stay",
+			// say than he needs to enter "stay" or "hit" only.
+			else {
+				System.out.println("You need to enter stay or hit");
+				choice = "hit";
+			}
+
+			// Check for player score if its over 21 or equals 21.
+			// If playerScore equals 21 player won and exit program.
+			// If playerScore s over 21 player loose and exit program.
 			if (playerScore == 21) {
 				System.out.println(playerName + " won!");
 				System.exit(0);
@@ -76,6 +105,9 @@ public class BlackJack {
 			}
 		}
 
+		// Reveal the first dealer card.
+		// While dealer score inferior to 17 draw new card and add its value to the
+		// dealder score.
 		System.out.println("The first card of the dealer was: " + deck[1]);
 		while (dealerScore < 17) {
 			System.out.println("New card for dealer: " + deck[i]);
@@ -83,6 +115,8 @@ public class BlackJack {
 			i++;
 		}
 
+		// Print the result depanding of the player and dealer score.
+		// Then exit the program.
 		if (dealerScore > 21 || dealerScore < playerScore) {
 			System.out.println(playerName + " won!");
 			System.exit(0);
@@ -93,6 +127,7 @@ public class BlackJack {
 			System.out.println("The dealer won!");
 			System.exit(0);
 		}
-
+		// Close scanner to avoid leaks.
+		keyboard.close();
 	}
 }

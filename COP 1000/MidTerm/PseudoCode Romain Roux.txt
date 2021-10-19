@@ -1,0 +1,105 @@
+Midterm Project - Pseudo Code - PID : 6322237
+
+Global variable : 
+totalQuestion = 0;
+totalCorrrect = 0;
+
+String playAgain = yes
+
+myFirstMethod :
+
+intro method;
+while playAgain is equald yes {
+	lesson method;
+	quizz method;
+	summarize method;
+	ask user if he want to play again and stock in playAgain;
+}
+end method;
+
+
+
+intro method :
+
+do together {
+	teacher move and orient to the first scene
+	camera move and orient to the first scene
+}
+do together {
+	teacher says welcome speach;
+	billboard left print the rules;
+	billboard right print what will be taught;
+}
+
+
+
+lesson method :
+
+initialize lessonArray with all the picture i will use on the billboard;
+initialise arraySize to 0;
+do together {
+	teacher move and orient to the second scene
+	camera move and orient to the second scene
+}
+teacher says something;
+while arraySize is inferior than lessonArray size {
+	teacher explain lesson;
+	billboard1 print picture of lessonArray[arraySize];
+	billboard2 print picture of lessonArray[arraySize];
+	arraySize equal arraySize + 1;
+}
+
+
+
+Quizz method :
+
+initialize questionArray with all the answer I can ask;
+initialize answerArray with all the correct answer;
+initialize possibleAnswerArray with all the answer;
+do together {
+	teacher move and orient to the third scene;
+	camera move and orient to the third scene;
+}
+teacher says something;
+
+count up to 5 {
+	increase totalQuestion by 1;
+	varible randomNum to generate random number;
+	do together {
+		teacher ask the question from questionArray[randomNum];
+		billboard1 print answer a from possibleAnswerArray;
+		billboard2 print answer b from possibleAnswerArray;
+		billboard3 print answer c from possibleAnswerArray;
+	}
+	variable userAnswer to get  user answer;
+	ask user for his answer (a - b or c) and save on userAnswer;
+	if userAnswer equal correctAnswer {
+		increase totalCorrect by 1;
+		teach says "Thats correct ! good job";
+	} else
+		teacher says "Thats not correct !;
+}
+
+
+
+Summarize method :
+
+initialize pourcenCorrect to totalCorrect / totalQuestion * 100;
+teacher says "Thanks for playing";
+teacher says how many riht answer we got out of how many question we got;
+
+if pourcentcorrect over 80
+	teacher says "Really well done"
+else if pourcentcorrect over 67
+	teacher says "You got an average score"
+else
+	teacher says "You got poor result"
+
+reset totalQuestion to 0;
+reset totalCorrect to 0;
+
+
+
+End method :
+
+teacher says something;

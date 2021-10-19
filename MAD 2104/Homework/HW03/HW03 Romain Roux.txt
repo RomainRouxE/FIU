@@ -17,13 +17,13 @@ Prove that :
 1² + 3² + 5² + ... + (2k + 1)² + (2k + 3)² = (k + 2)(2k + 3)(2k + 5)/3
 
 We have :
-1² + 3² + 5² + ... + (2k + 1)² + (2k + 3)²  = (k + 1)(2k + 1)(2k + 3)/3 + (2k + 3)² 
-                                            = (2k + 3)[(k + 1)(2k + 1) / 3 + (2k + 3)]
-                                            = (2k + 3)(k + 1)(2k + 1) + 3(2k + 3) / 3
-                                            = (2k + 3)(2k² + 3k + 1) + (6k + 9) / 3
-                                            = (2k + 3)(2k² + 9k + 10) / 3
-                                            = (2k + 3)(2k + 5)(k + 2) / 3
-                                            = (k + 2)(2k + 3)(2k + 5)/3
+1² + 3² + 5² +...+ (2k+1)² + (2k+3)² = (k + 1)(2k + 1)(2k + 3)/3 + (2k + 3)² 
+                                     = (2k + 3)[(k + 1)(2k + 1) / 3 + (2k + 3)]
+                                     = (2k + 3)(k + 1)(2k + 1) + 3(2k + 3) / 3
+                                     = (2k + 3)(2k² + 3k + 1) + (6k + 9) / 3
+                                     = (2k + 3)(2k² + 9k + 10) / 3
+                                     = (2k + 3)(2k + 5)(k + 2) / 3
+                                     = (k + 2)(2k + 3)(2k + 5)/3
 
 Therefore, 1² + 3² + 5² + · · · + (2n + 1)² = (n + 1)(2n + 1)(2n + 3) / 3 is true for all n ≥ 0.
 
@@ -66,11 +66,38 @@ Prove that :
 (k + 1)! > 2^(k + 1)
 
 We have :
-(k + 1)! = 2^(k + 1)
+(k + 1)! > 2^(k + 1)
 (k!) * (k + 1) > 2^k * 2
 We know that k! > 2^k, so we just need to show that (k + 1) > 2, which is always true since k > 4.
 
 Therefore, 2^n > n² is true for all n > 4.
+
+
+
+Ex.7 Prove that 6 divides n^3 − n whenever n is a nonnegative integer.
+
+Base case: for n = 0
+0^3 − 0 = 0 and 6 divides 0.
+
+Asume than n = k
+Inductive hypothesis:
+6 divides k^3 - k
+
+Prove that :
+6 divides (k + 1)^3 - (k + 1)
+
+We have :
+(k + 1)^3 − (k + 1)
+= k^3 + 3k² + 3k + 1 − k − 1
+= (k^3 − k) + (3k² + 3k)
+= (k^3 − k) + 3k(k + 1)
+
+We know that 6 divide k^3 - k, so we just need to prove that 6 divide 3k(k + 1)
+One of the consecutive integers k and k + 1 is even, so 2 divides the product k(k + 1) and thus 2 divides 3k(k + 1).
+3 divides 3k(k + 1).
+So 6 divides 3k(k + 1).
+
+Therefore, 6 divide n^3 - n for any positive integer n.
 
 
 
