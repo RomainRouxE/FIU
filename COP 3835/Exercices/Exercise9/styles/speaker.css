@@ -123,22 +123,10 @@ article h3 {
   font-size: 105%;
   padding-bottom: 0.25em;
 }
-
-figure {
+article img {
   float: right;
   margin: 0.5em 0 1em 1em;
-  border-bottom: 2px solid black;
-}
-
-figure img {
   border: 1px solid black;
-  margin-bottom: 5px;
-}
-
-figcaption {
-  color: #000000;
-  font-weight: bold;
-  text-align: left;
 }
 
 aside {
