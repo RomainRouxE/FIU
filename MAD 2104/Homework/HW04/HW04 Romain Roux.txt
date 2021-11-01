@@ -1,0 +1,117 @@
+MAD 2104 - HW04 - Romain Roux - PID: 6322237
+
+
+
+Ex1. How many strings of three decimal digits
+
+a. do not contain the same digit three times?
+
+There are 1000 decimal strings with 3 digits, and 10 of them are containing three equal digits: 000, 111, . . . , 999. 
+Therefore, there are 1000 − 10 = 990 strings that do not contain the same digit three times.
+
+b) begin with an odd digit?
+
+There are 5 odd digits from 0 to 9, therefore we have 5 * 10 * 10 = 500 strings of three decimal digits beginning with an odd digit.
+
+c) have exactly two digits that are 4 s ?
+
+44x - 9 strings
+4x4 - 9 strings
+x44 - 9 strings
+
+Total: 27 strings
+
+
+
+Ex2. How many strings of four decimal digits
+
+a) do not contain the same digit twice?
+
+There are 10 ways to pick the first digit, then 9 for the second, 8 for the third, and 7 for the fourth. 
+Therefore there are 10 * 9 * 8 * 7 = 5040 strings of four decimal that do not contain the same digit twice.
+
+b) end with an even digit?
+
+There are 5 even digits from 0 to 9, therefore we have 5 * 10 * 10 * 10= 5000 strings of four decimal digits ending with an even digit.
+
+c) have exactly three digits that are 9 s ?
+
+999x - 9 strings
+99x9 - 9 strings
+9x99 - 9 strings
+x999 - 9 strings
+
+Total: 36 strings
+
+
+
+Ex12. Show that whenever 25 girls and 25 boys are seated around a circular table there is always a person both of whose neighbors are boys.
+
+- We cannot have more than 2 boys seating together so we have 13 boys groups : 12 in pair and 1 alone.
+- There are at least 2 girls between each group of boys, otherwise you will have boys as left and right neighbors.
+
+But from the first statement, you can see that there are at least 13 places between boys that need to be filled with 2 girls, so a minnimum of 26 girls. But there is only 25 girls.
+
+
+
+Ex13.  Prove that at a party where there are at least two people, there are two people who know the same number of other people there
+
+Let n be the number of party people.
+The maximum number of people a person can know is n−1 and the minimum number he can know is 1, giving us n−1 possibilities for the number of people someone can know.
+Every single person must be assigned one of these n−1 possible numbers but since there are n party people one of these numbers must be used twice therefore two people know the same number of people.
+
+
+
+Ex14. Let S = {1, 2, 3, 4, 5}.
+
+(a) List all the 3-permutations of S.
+
+5!/(3!*2!) = 10 permutations of S :
+{1,2,3}
+{1,2,4}
+{1,2,5}
+{1,3,4}
+{1,3,5}
+{1,4,5}
+{2,3,4}
+{2,3,5}
+{2,4,5}
+{3,4,5}
+
+(b) List all the 3 -combinations of S.
+
+5!/2! = 60 combinations of S
+{1,2,3}
+{1,2,4}
+{1,2,5}
+{1,3,2}
+{1,3,4}
+...
+...
+...
+
+
+
+Ex18. How many ways are there for a horse race with four horses to finish if ties are possible? (Note: Any number of the four horses may tie.)
+
+Solution by cases:
+1- No horses tie :
+Then there are P(4,4) = 24 possible ways for the horsesto finish.
+
+2- Two horses that tie, but the others are differents.
+There are C(4,2) = 6 ways to choose the horses to be tied, and P(3,3) = 6 ways to determine the order of finish for the three groups.
+So there are 6*6 = 36 ways.
+
+3- Two groups of two horses that tie. 
+There are C(4,2) = 6 ways to choose the winners.
+
+4- Three horses that tie.
+By the same reasoning, there are C(4,3)*P(2,2) = 4*2 = 8 ways.
+
+5- There is only one way for all the horses to tie.
+
+Adding all the possible ways, there is 24 + 36 + 8 + 6 + 1 = 75 differents ways.
+
+
+
+Ex19. There are six runners in the 100 -yard dash. How many ways are there for three medals to be awarded if ties are possible?
