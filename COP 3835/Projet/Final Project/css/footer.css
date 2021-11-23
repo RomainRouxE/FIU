@@ -1,0 +1,20 @@
+.footer {
+  background: #000000;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+.locations {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 27%;
+  letter-spacing: 5px;
+  font-variant: small-caps;
+  padding: 0;
+}
+.address {
+  font-weight: lighter;
+  padding-top: 20px;
+  font-size: 16px;
+}

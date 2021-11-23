@@ -1,0 +1,54 @@
+@import "./header.css";
+@import "./footer.css";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #000000;
+  color: #0f4c75;
+  width: 100%;
+}
+.top-background {
+  background-image: url("../img/fiu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-title {
+  text-align: center;
+  font-size: 50px;
+  padding: 200px 450px;
+  letter-spacing: 5px;
+  text-shadow: 0 0 1px black;
+  font-family: "EB Garamond";
+  color: black;
+}
+.box {
+  padding: 10px;
+  background: rgba(150, 150, 150, 0.6);
+}
+.title-desc {
+  padding-top: 10px;
+  font-size: 40px;
+}
+.header-description {
+  font-variant: small-caps;
+  font-size: 30px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .page-title {
+    padding: 270px 0px;
+  }
+}
