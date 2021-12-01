@@ -1,6 +1,7 @@
 @import "./header.css";
 @import "./footer.css";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -14,37 +15,44 @@ html {
 
 body {
   margin: 0;
-  background: #1d001a;
+  background: #181b20;
   color: white;
   width: 100%;
 }
 
-.page-title {
+.page-content {
   text-align: center;
   font-size: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 30px;
-  margin-bottom: 30px;
   letter-spacing: 5px;
   text-shadow: 0 0 1px black;
   font-family: "EB Garamond";
 }
+.aboutme-title {
+  padding: 2%;
+  text-align: center;
+  font-size: 40px;
+}
 .box {
   margin: 10px;
   width: 40%;
-  padding: 10px;
   background: rgba(19, 19, 19, 0.8);
   border-radius: 10%;
 }
 .box_pic {
   margin: 10px;
   width: 45%;
+  height: fit-content;
 }
 .box_pic img {
   border-radius: 5%;
   width: 100%;
+}
+
+.box_pic .hidetest {
+  display: none;
 }
 .title-desc {
   padding-top: 10px;
@@ -55,9 +63,45 @@ body {
   font-size: 30px;
   margin: 20px;
 }
+.button-center {
+  text-align: center;
+  padding: 2% 0;
+}
+.button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 13px 23px;
+  text-decoration: none;
+  width: auto;
+}
 
-@media screen and (max-width: 700px) {
-  .page-title {
-    padding: 270px 0px;
+.button:hover {
+  color: black;
+  background-color: white;
+}
+
+@media screen and (max-width: 1250px) {
+  .box_pic .hidetest {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .page-content {
+    padding: 0;
+  }
+  .box,
+  .box_pic {
+    width: 95%;
+  }
+  .box_pic .hidetest {
+    display: none;
   }
 }
