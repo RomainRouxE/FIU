@@ -1,0 +1,159 @@
+MAD 2104 - HW05 - Romain Roux - PID: 6322237
+
+
+
+Ex 1. How many vertices and how many edges do these graphs have ?
+
+a) Kn
+
+Kn has n vertices.
+Kn has n(n-1)/2 edges.
+
+b) Cn
+
+Cn has n vertices.
+Cn has n edges.
+
+c) Wn
+
+Wn has n + 1 vertices.
+Wn has 2 * n edges
+
+d) Km,n
+
+Km,n has m + n vertices.
+Km,n has m * n edges.
+
+
+Ex 3. For which values of n are these graphs regular?
+
+a) Kn
+
+Kn is a complete graph.
+Kn is always regular for all n and will be a graph of degree n-1.  
+
+b) Cn
+
+Cn is cyclic graph
+Cn is always regular for all n values and is a graphs of degree 2.
+
+c) Wn
+
+Wn is wheel graph
+Wn is regular for n = 3 and is a graph of degree 3.
+
+
+Ex 4. For which values of m and n is Km,n regular?
+
+Km,n is regular for m = n and is a graph of degree m.
+
+
+Ex 7. If G is a simple graph with 15 edges and G¯ has 13 edges, how many vertices does G have?
+
+We know that G U G' are complete Graph Kn. So, G+G' = 15+13 = 28
+
+Total number of edges in the complete graph is nC2
+nC2 = (n(n-1))/2 = 28 
+
+By solving the equation we get n= 8 
+Therefore the number of vertices, n = 8
+
+
+Ex 8.
+
+a)
+
+A    B     A --- B
+ \  /       \
+   C          C
+
+These two graphs are isomorphic.
+
+b) 
+
+The two matrix doesn t have the same ammount of edges.
+Therefor they are not isomorphic.
+
+c)
+
+The two matrix doesn t have the same ammout of edges.
+Therefor they are not isomorphic.
+
+
+Ex 9.
+
+1) this graph doesn t have an Euler circuit not a Euler path.
+
+2) This graph got an Euler path :
+	d -> g -> h -> i -> f -> e -> h -> f -> c -> b -> a -> d -> e -> b -> d
+
+3) This graph doesn t have an Euler circuit but got an Euler path :
+	a -> b -> e -> b -> d -> e -> a -> c -> e -> c -> d
+
+4) This graph goesn t have an Euler circuit but has an Euler path :
+	f -> b -> c -> d -> b -> a -> e -> d -> a -> f -> e -> c
+
+5) This graph got an Euler circuit : 
+	a -> e -> a -> e -> c -> d -> e -> b -> d -> c -> b -> a
+
+
+Ex 10.
+
+First graph : a           d
+              | \       / |
+              |   c -- f  |
+              | /       \ |
+              b           e
+
+Hamilton circuit : a -> b -> c -> f -> d -> e
+
+Second graph : a --- b
+               |   / | \
+               |  /  |  c
+               | /   | /
+               e --- d
+
+Hamilton circuit : a -> e ->  b -> d -> c
+
+Third graph : a --- b
+              | \ / |
+              |  c  |
+              |   \ |
+              e --- d --- f
+
+Hamilton circuit : f -> d -> b -> c -> a -> e
+
+Fourth graph :       a --- b --- g
+                     | \ / |
+                     |  x  |
+                     |/  \ |
+               e --- c --- d --- f
+
+There is no hamilton path on the graph because there is 3 vertice with only 1 edge.
+
+
+Ex 11.
+
+Graph 1 : Is homeomorphic to K3,3
+
+Graph 2 : is not homeomorphic to K3,3
+
+Graph 3 : is not homeomorphic to K3,3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

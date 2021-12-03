@@ -1,3 +1,10 @@
+/*
+ * This is a program written by Romain ROUX
+ * as a deliverable of Programming Assignment 5
+ * for COP2250 - Fall 2021
+ * Date: 12/02/2021
+ */
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
