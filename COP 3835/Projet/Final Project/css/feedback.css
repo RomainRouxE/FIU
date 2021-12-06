@@ -1,0 +1,80 @@
+@import "./header.css";
+@import "./footer.css";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  width: 100%;
+  color: white;
+}
+.page-content {
+  letter-spacing: 5px;
+  text-align: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.box {
+  margin: 30px auto;
+  width: 60%;
+  padding: 10px 20px;
+  background: rgba(150, 150, 150, 0.6);
+  border-radius: 50px;
+  font-family: "EB Garamond";
+}
+.feedback-title {
+  font-size: 30px;
+}
+.feedback-text {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.styled-table {
+  width: 55%;
+  border-collapse: collapse;
+  margin: 40px auto;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+.styled-table thead tr {
+  background-color: #00980d;
+  color: #ffffff;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #363636;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #00980d;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #00740a;
+}

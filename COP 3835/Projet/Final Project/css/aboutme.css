@@ -63,6 +63,18 @@ body {
   font-size: 30px;
   margin: 20px;
 }
+.header-text {
+  text-align: start;
+  font-variant: small-caps;
+  font-size: 20px;
+  margin: 20px;
+}
+.header-com {
+  text-align: start;
+  font-variant: small-caps;
+  font-size: 10px;
+  margin: 20px;
+}
 .button-center {
   text-align: center;
   padding: 2% 0;

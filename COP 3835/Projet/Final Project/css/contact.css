@@ -15,7 +15,7 @@ html {
 
 body {
   margin: 0;
-  background: #000000;
+  background-color: black;
   width: 100%;
   color: white;
 }
@@ -29,7 +29,7 @@ body {
 .box {
   width: 50%;
   padding: 10px;
-  background: rgba(78, 78, 78, 0.8);
+  background: rgba(59, 59, 59, 0.8);
   border-radius: 50px;
 }
 .contact-title {
@@ -48,7 +48,7 @@ form {
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border: 2px solid #cc6666;
+  border: 2px solid #496ccc;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -58,7 +58,7 @@ form {
 }
 
 .contact-input:focus {
-  border: 2px solid #cc4949;
+  border: 2px solid #496ccc;
 }
 .contact-input::placeholder {
   color: white;
@@ -73,7 +73,7 @@ textarea {
 [type="submit"] {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   width: 100%;
-  background: #cc6666;
+  background: #496ccc;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
@@ -86,7 +86,7 @@ textarea {
   font-weight: 700;
 }
 [type="submit"]:hover {
-  background: #cc4949;
+  background: #345bc9;
 }
 
 @media screen and (max-width: 700px) {
