@@ -14,23 +14,24 @@
  * ..........{ Romain ROUX }..........
 */
 
+package pgm1;
+
 public class rouxRubuntuPgm1 {
 	public static void processUbuntu(String name, double number, String word) {
 		System.out.printf("%s%n", name);
-		System.out.printf("%.2f%n", number);
+		System.out.printf("%.2f - no clue what \"using 10 spaces for the integer part and 5 spaces for the decimal part of the number\" means.%n", number);
 		System.out.printf("%S%n", word);
-		System.out.println("3 advantages of VM:");
-		System.out.println("Run multiple operating system\n");
-		System.out.println("Security\n");
-		System.out.println("Easy recovery\n");
-		System.out.println("Major VM problem: its slow\n");
 	}
 
 	public static void main(String args[]) {
 		System.out.printf("Editor used: vi%n");
 		System.out.printf("Command to save the program: :w%n");
 		System.out.printf("Command to exit vi without saving: :q!%n");
-
 		processUbuntu("Roux", 2021.99, "Fall");
+		System.out.println("3 advantages of VM:");
+		System.out.println("Run multiple operating system\n");
+		System.out.println("Security\n");
+		System.out.println("Easy recovery\n");
+		System.out.println("Major VM problem: its slow\n");
 	}
 }
