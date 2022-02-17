@@ -1,0 +1,12 @@
+g Thanksgiving Autumn 6:00pm turkey 8 dining_room 20.00 home-cooked 
+g Christmas Winter 1:00pm pork 6 outdoor_patio 30.00 catered
+g Easter Spring 3:00pm ham 7 dining_room 25.00 pot_luck
+g Fourth_of_July Summer 1:00pm ribs 5 picnic 15.00 barbeque
+p Thanksgiving Autumn 7:00pm chicken 6 outdoor_patio 20.00 home-cooked 12 pumpkin_pie apple_cider 3.00 4.00
+p Christmas Winter 5:00pm ham 10 dining_room 35.00 home-cooked 10 flan egg_nog 3.25 1.95
+p Easter Spring 6:00pm mac-n-cheese 4 dining_room 20.00 pot_luck 8 carrot_cake orange_juice 3.25 2.50
+p Fourth_of_July Summer 11:00am sandwiches 3 picnic 15.00 catered 15 apple_pie lemonade 3.50 1.50
+c Thanksgiving Autumn 5:00pm ham 10 living_room 17.00 pot_luck 25 pecan_pie wine 5.00 6.00 Checkers Pilgrims_in_America Coming_to_America 3.25
+c Christmas Winter 3:00pm turkey 8 dining_room 28.00 catered 12 peppermint_ice_cream champagne 4.25 6.50 Chess Twas_the_Night_Before_Christmas It's_a_Wonderful_Life 3.00
+c Easter Spring 4:00pm lamb 6 dining_room 32.00 home-cooked 10 egg_custard tomato_juice 4.25 1.50 Easter_Egg_Hunt Peter_Rabbit The_Greatest_Story_Ever_Told 4.50
+c Fourth_of_July Summer 10:00am pancakes 3 outdoor_patio 12.00 home-cooked 12 peaches mimosa 2.50 7.50 volleyball An_American_Tail Independence_Day 3.75
