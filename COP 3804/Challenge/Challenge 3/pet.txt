@@ -1,0 +1,11 @@
+Rover   canine      5    2021   01   17    Charters         Maria                    mcharter@fiu.edu
+Spot     canine      3    2021   03     10  Rodriguez       Raul                     rrodrig@fiu.edu
+Misty    feline        8    2020   02    14   Garcia            Manuel                 mgarcia@fiu.edu
+Rambo  canine     2    2020   04    25   Rodriguez    Jorge                      jorgeRodriguez@fiu.edu
+Oreo     feline        9    2019   06     5    Morris          Garfield                   gmorris@fiu.edu
+
+Shiloh   canine      10  2021   07     3    Smith            John                      jsmith@fiu.edu
+Cozy    feline         6   2018    12   17    Gonzalez      Jorge                    jgonza17@fiu.edu
+Lady     canine      4    2021   01     8     Joseph          Michelle               mjoseph@fiu.edu
+Misty    feline        1    2020   10     3      Hernandez    Yvette                  yhernandez@fiu.edu
+Pitipua  feline        7    2017   09   15     Green             Morris                  mgreen@fiu.edu 
