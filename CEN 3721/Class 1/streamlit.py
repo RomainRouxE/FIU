@@ -1,10 +1,11 @@
 import streamlit as st
+import requests
 
-st.title("Learning streamlit")
-st.header("Human computer interaction")
-st.subheader("Basic features")
+st.title("Air quality index")
 
-first_name=st.text_input("first name")
-last_name=st.text_input("last name")
+url = "https://api.airvisual.com/v2/near"
+url_cities = "https://api.airvisual.com"
 
-st.write("hi", first_name, last_name,"welcome to hci")
+response=requests.get(url_cities).json()
+
+st.write(response)
